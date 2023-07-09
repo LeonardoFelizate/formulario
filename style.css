@@ -1,0 +1,68 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background-color: darkslategray;
+    color: white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+    margin-top: 100px;
+}
+
+form {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+form div {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+
+form input, form textarea {
+    outline: unset;
+    padding: 20px;
+    min-width: 300px;
+    border: 1px solid darkslategray;
+    border-radius: 20px;
+}
+
+form input:focus, form textarea:focus {
+    background-color: wheat;
+}
+
+form input[type=submit] {
+    background-color: darkslategray;
+    color: white;
+    cursor: pointer;
+}
+
+form label {
+    margin-left: 10px;
+}
+
+@media screen and (max-width: 500px) {
+    header {
+        font-size: 18px;
+    }
+
+    section {
+        margin-top: 50px;
+    }
+
+    form input, form textarea {
+        min-width: 200px;
+    }
+}
